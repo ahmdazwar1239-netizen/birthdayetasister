@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Happy 20th Birthday Julita Kirana Zega">
+    <title>For You, JZ ✦</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Noto+Serif+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <!-- GANTI SOURCE MUSIC DI SINI -->
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <button id="musicToggle" class="music-btn" title="Play/Pause Music">
+        <span class="music-icon">♪</span>
+        <span class="music-bars">
+            <span></span><span></span><span></span><span></span>
+        </span>
+    </button>
+
+    <!-- ==================== SCENE 1: LANDING ==================== -->
+    <section id="landing" class="scene active">
+        <div class="stars-container" id="starsContainer"></div>
+        <div class="moon-glow"></div>
+        <div class="ocean">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+
+        <div class="landing-content">
+            <div class="fireflies" id="fireflies"></div>
+            <p class="landing-greeting fade-in-up">Hai, Julita...</p>
+            <p class="landing-message fade-in-up delay-1">
+                eh ada surat buat kamu nih<br>
+                dari <em>dia</em> yang selalu liatin kamu dari jauh
+            </p>
+
+            <div class="envelope-wrapper fade-in-up delay-2" id="envelopeWrapper">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-top"></div>
+                    <div class="envelope-body">
+                        <div class="envelope-letter-peek">
+                            <span>Buka aku...</span>
+                        </div>
+                    </div>
+                    <div class="envelope-shadow"></div>
+                </div>
+                <p class="envelope-hint">— klik untuk membuka —</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SCENE 2: LETTER ==================== -->
+    <section id="letterScene" class="scene">
+        <div class="letter-bg">
+            <img src="moon_ocean_bg.png" alt="moonlit ocean" class="letter-bg-img">
+            <div class="letter-bg-overlay"></div>
+        </div>
+
+        <div class="letter-container" id="letterContainer">
+            <!-- Page Indicator -->
+            <div class="page-indicator" id="pageIndicator">
+                <span class="dot active" data-page="0"></span>
+                <span class="dot" data-page="1"></span>
+                <span class="dot" data-page="2"></span>
+                <span class="dot" data-page="3"></span>
+                <span class="dot" data-page="4"></span>
+            </div>
+
+            <!-- ===== PAGE 1: OPENING ===== -->
+            <div class="letter-page active" data-page="0">
+                <div class="page-paper">
+                    <div class="paper-texture"></div>
+                    <div class="page-content opening-page">
+                        <div class="japanese-quote">
+                            <span class="jp-text">月が綺麗ですね</span>
+                            <span class="jp-romaji">Tsuki ga kirei desu ne?</span>
+                            <span class="jp-meaning">— Bulan indah malam ini, bukan? —</span>
+                        </div>
+                        <div class="divider">
+                            <span class="divider-star">✦</span>
+                        </div>
+                        <div class="opening-text">
+                            <!-- GANTI TEKS OPENING DI SINI -->
+                            <p>Dear Julita Kirana Zega,</p>
+                            <p>Happy 20th Birthday, JZ.</p>
+                            <p class="opening-subtext">
+                                Ini adalah surat dari seseorang yang mungkin tidak pernah kamu sangka...
+                            </p>
+                        </div>
+                        <div class="page-number">1 / 5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PAGE 2: IMAGE LEFT + TEXT RIGHT ===== -->
+            <div class="letter-page" data-page="1">
+                <div class="page-paper">
+                    <div class="paper-texture"></div>
+                    <div class="page-content split-page">
+                        <div class="split-image">
+                            <!-- GANTI GAMBAR DI SINI -->
+                            <div class="image-placeholder" id="page2Image">
+                                <span class="placeholder-icon">🌸</span>
+                                <span class="placeholder-text">Taruh foto di sini<br><small>ganti src di HTML</small></span>
+                            </div>
+                            <!-- Uncomment dan ganti src untuk pakai foto: -->
+                            <!-- <img src="foto1.jpg" alt="foto untuk JZ"> -->
+                        </div>
+                        <div class="split-text">
+                            <!-- GANTI TEKS HALAMAN 2 DI SINI -->
+                            <p>
+                                Tulis kata-kata kamu di sini...
+                            </p>
+                            <p>
+                                Bisa beberapa paragraf kalau mau.
+                            </p>
+                        </div>
+                        <div class="page-number">2 / 5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PAGE 3: TEXT ONLY ===== -->
+            <div class="letter-page" data-page="2">
+                <div class="page-paper">
+                    <div class="paper-texture"></div>
+                    <div class="page-content text-page">
+                        <div class="full-text">
+                            <!-- GANTI TEKS HALAMAN 3 DI SINI -->
+                            <p>
+                                Tulis kata-kata kamu di sini...
+                            </p>
+                            <p>
+                                Halaman ini full teks, bisa panjang.
+                            </p>
+                            <p>
+                                Tambah paragraf sesuai kebutuhan.
+                            </p>
+                        </div>
+                        <div class="page-number">3 / 5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PAGE 4: IMAGE LEFT + TEXT RIGHT ===== -->
+            <div class="letter-page" data-page="3">
+                <div class="page-paper">
+                    <div class="paper-texture"></div>
+                    <div class="page-content split-page">
+                        <div class="split-image">
+                            <!-- GANTI GAMBAR DI SINI -->
+                            <div class="image-placeholder" id="page4Image">
+                                <span class="placeholder-icon">🌙</span>
+                                <span class="placeholder-text">Taruh foto di sini<br><small>ganti src di HTML</small></span>
+                            </div>
+                            <!-- Uncomment dan ganti src untuk pakai foto: -->
+                            <!-- <img src="foto2.jpg" alt="foto untuk JZ"> -->
+                        </div>
+                        <div class="split-text">
+                            <!-- GANTI TEKS HALAMAN 4 DI SINI -->
+                            <p>
+                                Tulis kata-kata kamu di sini...
+                            </p>
+                            <p>
+                                Bisa beberapa paragraf juga.
+                            </p>
+                        </div>
+                        <div class="page-number">4 / 5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PAGE 5: CLOSING ===== -->
+            <div class="letter-page" data-page="4">
+                <div class="page-paper">
+                    <div class="paper-texture"></div>
+                    <div class="page-content closing-page">
+                        <div class="closing-text">
+                            <!-- GANTI TEKS CLOSING DI SINI -->
+                            <p>
+                                Tulis penutup surat kamu di sini...
+                            </p>
+                            <p class="closing-sign">
+                                — Dari dia yang selalu liatin kamu dari jauh
+                            </p>
+                        </div>
+                        <div class="divider">
+                            <span class="divider-star">✦</span>
+                        </div>
+                        <div class="birthday-wish">
+                            <p class="wish-main">Happy 20th Birthday</p>
+                            <p class="wish-name">Julita Kirana Zega</p>
+                            <p class="wish-date">✦ 2026 ✦</p>
+                        </div>
+                        <div class="page-number">5 / 5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="nav-arrow nav-prev" id="prevBtn" disabled>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <button class="nav-arrow nav-next" id="nextBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
